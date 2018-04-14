@@ -1,0 +1,15 @@
+net: "FR-caffe/models/WideNet/train_val_transformed.prototxt"
+test_iter: 10
+test_interval: 1000
+test_initialization: false
+base_lr: 0.0001
+lr_policy: "step"
+gamma: 0.9
+stepsize: 2000
+display: 1000
+max_iter: 50000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 10000
+snapshot_prefix: "FR-caffe/models/WideNet/WideNet_transformed"
+solver_mode: GPU
